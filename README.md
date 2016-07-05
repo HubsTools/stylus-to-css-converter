@@ -1,7 +1,7 @@
 Stylus2CSS
 ===================
 
-[Official Stylus Documentation](http://stylus-lang.com/)
+[Launch Stylus2CSS](https://mikethedj4.github.io/Stylus2CSS) - [Official Stylus Documentation](http://stylus-lang.com/)
 
 License
 -------------
