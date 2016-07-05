@@ -1,0 +1,35 @@
+doctype html
+html
+  head
+    title Stylus2CSS
+    meta(charset='utf-8')
+    meta(name='viewport' content='initial-scale=1.0')
+    meta(name='description', content='Easily convert your Stylus to CSS')
+    meta(name='author', content='Michael Schwartz')
+    link(rel='stylesheet', href='style.css')
+script(src='lib/stylus.min.js')
+script(src='libraries/jszip/jszip.min.js')
+    script(src='libraries/jszip/jszip-utils.js')
+    script(src='libraries/jszip/FileSaver.js')
+    script(src='libraries/jszip/Blob.js')
+    script(src='libraries/alertifyjs/alertify.min.js')
+  body
+    header.grid
+      .grid__col--12
+        h1.headline-primary--grouped Stylus2CSS
+        h2.headline-secondary--grouped Paste your Stylus code below to convert it to CSS
+    .grid
+      .grid__col--6
+        textarea.form__input(data-action='input', placeholder='Stylus here...', rows='7')
+      .grid__col--6
+        textarea.form__input(data-action='output', placeholder='Converted CSS here...', rows='7')
+      .grid__col--12.mtop
+        button.btn--default(data-action='convert') Convert
+        button.btn--default(data-action='download') Download
+        button.btn--default(data-action='clear') Clear
+    footer
+      | Made with love by 
+      a(href='http://mikethedj4.github.io/', target='_blank') Michael
+      | .
+
+    script(src='script.js')
